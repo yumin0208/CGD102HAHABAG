@@ -2,205 +2,222 @@
 
 section {
     width: 100%;
+    /* padding: 150px 0; */
+}
+
+/* ===========零錢包商品============= */
+/* 第一區塊======= */
+.coin-purse{
+    overflow: hidden;
+    padding: 150px 0;
+}
+
+.banner-group{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px solid #0945BA;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 6px 6px 0 0 #0945BA;
+}
+/* 文字-------------- */
+.banner-txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: #ffff;
+    border-radius: 30px 0 0 30px;
+}
+.banner-txt span{
+    display: inline-block;
+    background-color: #0945BA;
+    color: #FFD54C;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.banner-txt-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0945BA;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* 斜線 */
+.slash{
+    width: 25px;
+    height: 25px;
+    background:linear-gradient(-45deg,transparent 45%,#FFD54C 45%,transparent 55%,transparent 55%);
+    position: absolute; 
+    left: 155px;
+    bottom: 4px;
+}
+
+.banner-txt p{
+    font-size: 18px;
+    color: #404040;
+    line-height: 36px;
+}
+
+/* 圖片------------ */
+.banner-picture{
+   width: 50%;
+   height: 50%;
+   
+}
+.banner-picture img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0 30px 30px 0;
+    overflow: hidden; 
+}
+/* 背景黃色四角形背景 */
+.banner-rectangle{
+    background-color:#FFD54C ;
+    width: 100%;
+    height: 1200px;
+    clip-path: polygon(100% 10%,100% 30%,-20% 50%, -30% 40% );
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+}
+/* 第二區塊--------------- */
+/* 上方頁籤方塊 */
+.label-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-box-coin{
+    width: 18%;
+    height: 100px;
+    border-bottom: 2px solid #0945BA;
+    box-sizing: border-box;
+}
+.label-box-wallet{
+    width: 12%;
+    height: 100px;
+    border: 2px solid #0945BA;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    background-color: #FFD54C;
+    box-shadow: 3px 0px 0 0 #2c72ff;
+}
+.label-box-wallet p{
+    color: #0945BA;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.label-box-bag{
+    width: 70%;
+    height: 100px;
+    border-bottom: 2px solid #0945BA;
+    box-sizing: border-box;
+    position: relative;
+}
+.label-box-bag::before{
+    content: '口金皮夾';
+    color: #79a3ff;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 16%;
+    height: 98%;
+    border: 2px solid #b8cfff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    left: 3px;
+}
+.label-box-bag::after{
+    content: '口金斜背包';
+    color: #79a3ff;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 16%;
+    height: 98%;
+    border: 2px solid #b8cfff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    left: 218px;
+}
+/* 商品區塊 */
+.product-group{
     max-width: 1200px;
     margin: auto;
-    padding: 200px;
+    padding-bottom: 300px ;
 }
-
-/* ===========客製商品============= */
-/* 標題文字======= */
-.custom-paper-tape{
-    width: 310px;
-    height: 60px;
-    background-image: url(/image/bg2.svg) ;
-    background-repeat: no-repeat;
-    margin:auto;
-    margin-bottom: 100px;
-    font-size: 30px;
-    color: #404040;
-    font-weight: 800;
+.product-group h3 {
+    font-size: 24px;
     text-align: center;
-    line-height: 60px;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
+    color: #0945BA;
+    font-weight: 800;
+    padding: 80px 0 30px 0;
 }
-
-/* 圖片與文字的群組--------- */
-.custom-group{
+.product-items-group{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+   
+}
+.product-items-octagon{
+    width: 275px;
+    background-color: #FFE5FB;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 50px;
+    box-shadow:2px 2px 5px 0px #FFD54C;
+}
+.product-items-picture{
+    width: 96%;
     margin: auto;
+    clip-path: polygon(15% 0, 85% 0, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0 85%, 0 15%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
 }
-/* 圖片------------ */
-.custom-picture{
-   width: 45%;
-   height: 45%;
-   overflow: hidden;
-   position: sticky;
-   top: 150px;
-   border: 3px solid #FFD54C;
-   border-radius: 10px;
-}
-.custom-picture img{
+
+.product-items-picture img{
     width: 100%;
     height: 100%;
     vertical-align: top;
     object-fit: cover;
     object-position: center center;
 }
-/* 文字-------------- */
-.custom-selection{
-    width: 45%;
-}
-/* .selection-txt {
-    
-} */
-/* 說明文字--------------- */
-.selection-txt h3{
-    padding:0px 10px;
-    font-size: 22px;
-    font-weight: 700;
-    color: #404040;
-    letter-spacing: 2px;
-    display: inline-block;
-    background-image: url(/image/bg7.svg);
-    background-position: no repeat;
-}
-.selection-txt p{
-    padding: 10px;
-    font-size: 18px;
-    color: #5a5a5a;
-    line-height: 30px;
-    text-align: justify;
-}
-/* 開始訂製----------- */
-/* 訂製版型-------------- */
-
-.layout-title,.metal-title, .fabric-title, .inner-title, .printing-title{
-    display: flex;
-    align-items: flex-end;
-    padding: 20px 0;
-}
-.layout-dashed{
-    flex-grow: 1;
-    border-bottom:2px dashed #0945BA ;
-}
-
-.metal-dashed, .fabric-dashed,.inner-dashed{
-    border-bottom:2px dashed #0945BA ;
-    flex-grow: 1;
-}
-.printing-dashed{
-    flex-grow: 1;
-    border-bottom:2px dashed #0945BA ;
-}
-
-.layout-title h4, .metal-title h4, .fabric-title h4,.inner-title h4, .printing-title h4{
-    font-size: 18px;
-    color: #0945BA;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-/* 選版型圖---------------- */
-.layout-link{
-    display: flex;
-}
-.layout-link a :active{
-    border: 5px solid #0945BA;
-}
-.layout-link a{
-    width: 33.333333%;
-    display: block;
+.product-items-txt p{
     text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    color: #0945BA;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.layout-link a img{
-    vertical-align: top;
-    width: 100%;
-}
-.selection-layout p{
-    font-size: 15px;
-    color: #404040;
-    letter-spacing: 2px;
-    line-height: 24px;
-    padding: 10px;
-}
-/* 選口金顏色金色與銀色--------------- */
-.metal-link{
-    display: flex;
-}
-.metal-link .color{
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-.metal-link .color:active{
-    border:5px solid #0945BA;
-}
-.metal-link .yellow{
-    background-color: yellow;
-}
-.metal-link .gray{
-    background-color: rgb(187, 187, 187);
-}
-/* 選外觀布料顏色 */
-.fabric-link, .inner-link, .printing-link{
-    display: flex;
-    flex-wrap: wrap;
-}
-.fabric-link a, .inner-link a, .printing-link a{
-    width: 20%;
-    display: block;
-    text-align: center;
-    text-decoration: none;
+    padding: 10px 0;
     font-size: 16px;
-    letter-spacing: 1px;
-    color: #404040;
-    padding: 15px;
-    box-sizing: border-box;
+    color: #606060;
 }
-.fabric-link a img, .inner-link a img, .printing-link a img{
-    vertical-align: top;
-    width: 100%;
-    margin-bottom: 10px;
-    /* object-fit: cover;
-    object-position: center center; */
-}
-.fabric-link a :active, .inner-link a :active, .printing-link a :active{
-    border: 5px solid #ffde72;
-}
-/* 下一步按鈕 */
-.next-page {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    margin: 50px 0;
-}
-
-.next-page a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 20px 20px 20px 20px;
-    border: 2px dashed #0945BA;
-    box-shadow: 0 0 0 3px yellow;
-    background-color: #FFEF00;
-    color: #0945BA;
+.product-items-txt .price{
     font-size: 18px;
+    font-weight: 800;
+    color: #0945BA;
+    padding-bottom:20px; 
 }
+/* 第三區塊----------- */
 
-.next-page a:hover{
-    background-color: #0945BA;
-    color: #FFD54C;
-    border: 2px dashed #FFD54C;
-    box-shadow: 0 0 0 3px #0945BA;
-}
+
+
+
 
 
 
