@@ -1,0 +1,569 @@
+/* 網頁內容--------------- */
+
+body{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fff5fe, #E1F6FF, #FFF2FD);
+}
+
+section {
+    width: 100%;
+    --my-color : #7190CD;
+}
+
+.fixed {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    --my-color : #7190CD;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(67,105,180);
+    box-shadow: 0 0 15px 2px rgb(39, 50, 105);
+    position: fixed;
+    z-index: 5;
+}
+/* 導覽列------------- */
+.menu {
+    display: flex;
+    justify-content: center;    
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 15px 35px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgb(66, 66, 66);  
+}
+
+/* logo------------- */
+.menu h1 a {
+    text-indent: -100000em;
+    background:url(/image/logo1.svg) no-repeat center / cover;
+    width: 75px;
+    height: 75px;
+    display: block;
+}
+
+/* 購物車與會員小icon----- */
+.sign-in-icon{
+    margin: 15px 15px 15px 102px;
+}
+
+.material-symbols-rounded, .material-symbols-rounded{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    color: gray;
+}
+
+/* banner圖片輪播--------- */
+.banner-picture {
+    width: 100% ;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.banner-picture img{
+    vertical-align:top;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* ===========最新商品============= */
+
+.new-product-group {
+    height: 880px;
+    background-color:var(--my-color) ;
+    border-radius: 91px 0 91px 0;
+    margin-bottom: 150px;
+    position: relative;
+}
+/* 標題h2設定----------- */
+.new-paper-tape, .product-paper-tape, .custom-paper-tape {
+    font-size: 30px;
+    color: #404040;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px 30px;
+    line-height: 50px;
+}
+
+.new-paper-tape {
+    width: 250px;
+    height: 50px;
+    background-image: url(/image/bg1.svg) ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.new-product-group > p{
+    padding: 50px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 36px;
+}
+
+.new-product-list {
+    display: flex;
+    flex-wrap: no wrap;
+    justify-content: space-around;
+}
+
+.new-product-items {
+    width: 300px;
+    margin: 10px 15px;
+    border-radius: 150px 150px 10px 10px;
+    border: 5px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px 1px rgb(196, 196, 196);
+}
+/* 最新商品照片------------- */
+.new-product-items-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px 150px 0px 0px;
+    overflow: hidden;
+}
+
+.new-product-items-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* 最新商品文字------------- */
+.new-product-items-text {
+    width: 280px;
+    padding:15px 10px 5px 10px;
+}
+
+.new-product-items-text h3 {
+    font-size: 20px;
+    color: #404040;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.new-product-items-text p {
+    font-size: 16px;
+    color: #404040;
+    text-align: left;
+    padding: 7px 0;
+}
+.new-product-items-text .price{
+    font-weight: 00;
+    font-size: 20px;
+    color: #089f90;
+    text-align: right;
+}
+
+/* 更多商品按鈕------------ */
+.more-new-product ,.more-product {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.more-new-product a , .more-product a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px dashed #0945BA;
+    box-shadow: 0 0 0 3px yellow;
+    background-color: #FFEF00;
+    color: #0945BA;
+    font-size: 18px;
+}
+
+.more-new-product a:hover{
+    background-color: #0945BA;
+    color: #FFD54C;
+    border: 2px dashed #FFD54C;
+    box-shadow: 0 0 0 3px #0945BA;
+}
+.more-product a:hover{
+    background-color: #ffffff;
+    color: #0945BA;
+    border: 2px dashed #0945BA;
+    box-shadow: 0 0 0 3px #ffffff;
+}
+
+/* ===========商品介紹============= */
+
+/* 橢圓形背景------- */
+.product-introduction-ellipse {
+    width: 500px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #0057A7;
+    margin: auto;
+    position: relative;
+    margin-bottom: -150px;
+    z-index: 0;
+}
+/* 商品介紹標題----------------- */
+.product-introduction-ellipse h2{
+    font-size: 30px;
+    color: #FFEEFC;
+    font-weight: 800;
+    text-align: center;
+    line-height: 50px;
+}
+/* 商品標題邊框-------- */
+.product-title {
+    width: 310px;
+    height: 50px;
+    background-image: url(bg4.svg) ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* 商品介紹底圖背景--------- */
+.product-introduction-group {
+    background-color: #0057A7;
+    position: relative;
+    z-index: 1;
+}
+/* 商品介紹文字---------- */
+.title-text {
+    padding: 40px 0;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 36px;
+}
+/* 商品介紹九個區塊----------- */
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 商品介紹第一列零錢包------------ */
+.product-items-coin, .product-items-wallet, .product-items-bag{
+    width: 300px;
+    background-color: #FFFFFF;
+    margin: 50px 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.product-items .product-picture {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.product-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.product-text-coin, .product-text-wallet,.product-text-bag {
+    width: 280px;
+    margin: 15px 10px;
+}
+
+.product-text-coin{
+    background-color: #FFEEFC;
+}
+
+
+.product-text-coin h4,.product-text-wallet h4, .product-text-bag h4{
+    font-size: 18px;
+    color: #0D487D;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.product-text-coin p,.product-text-wallet p, .product-text-bag p {
+    font-size: 15px;
+    color: #404040;
+    padding: 5px 10px;
+}
+.product-text-coin .price,.product-text-wallet .price, .product-text-bag .price
+{
+    font-size: 18px;
+    color: #404040;
+    text-align: right;
+    padding: 10px;
+}
+/* 商品介紹第二列零錢包------------ */
+
+.product-text-wallet {
+    background-color: #FFFDE1;
+}
+
+.product-text-wallet h4 {
+    font-size: 18px;
+    color: #0D487D;
+    font-weight: 600;
+}
+
+.product-text-wallet p {
+    font-size: 15px;
+    color: #404040;
+}
+
+/* 商品介紹第三列零錢包------------ */
+
+.product-text-bag {
+    background-color: #F0FFE9;
+}
+
+.product-text-bag h4 {
+    font-size: 18px;
+    color: #0D487D;
+    font-weight: 600;
+}
+
+.product-text-bag p {
+    font-size: 15px;
+    color: #404040;
+}
+
+/* ===========客製商品============= */
+
+.custom-made-group {
+    background-color:var(--my-color) ;
+    padding: 120px 0;
+}
+
+.custom-made-bag {
+    max-width: 1200px;
+    background-image:url(/image/bag14.jpg);
+    border-radius: 91px 0 91px 0;
+    margin:auto;
+    padding-top: 30px;
+    border:5px solid #0057A7;
+    position: relative;
+}
+
+.custom-paper-tape {
+    width: 250px;
+    height: 50px;
+    background-image: url(/image/bg2.svg) ;
+    background-repeat: no-repeat;
+    margin:auto;
+}
+
+.custom-items {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.custom-made-text {
+    width: 450px;
+    margin: 0 15px;
+}
+.custom-made-text h3 {
+    margin-bottom: 10px;
+    padding:0px 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #404040;
+    letter-spacing: 2px;
+    display: inline-block;
+    background-image: url(/image/bg7.svg);
+    background-position: no repeat;
+}
+
+.custom-made-text p {
+    padding: 10px;
+    font-size: 18px;
+    color: #5a5a5a;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.custom-made-picture {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px 5px 5px 5px;
+    border: 5px solid #FFD54C;
+    margin: 0 15px;
+}
+
+.custom-made-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.paper-tape-left {
+    position: absolute;
+    transform: rotate(40deg) translate(-120px,10px);
+}
+.paper-tape-right {
+    position: absolute;
+    transform: translate(1030px,-700px) rotate(40deg);
+}
+/* 波浪背景============ */
+.background {
+    height: 162px;
+    background-image: url(/image/bg3.svg);
+}
+/* ======品牌介紹&店鋪位置======== */
+
+.brand, .shop{
+    max-width: 1200px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 100px 0;
+    background-color: #0057A7;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+}
+/* 品牌介紹&店鋪位置的照片--------- */
+.brand-picture ,.shop-picture {
+    width: 600px;
+    height: 250px;
+}
+
+.brand-picture img, .shop-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; 
+ }
+ .brand-picture img{
+    border-radius: 10px 0 0 10px; 
+ }
+ .shop-picture img{
+    border-radius: 0 10px 10px 0;
+ }
+
+/* 品牌介紹&店鋪位置文字--------- */
+.brand-title, .shop-title {
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-title h2, .shop-title h2{
+    border-bottom: 3px solid #ffffff;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 800; 
+}
+/* 品牌介紹&店鋪位置dash--------- */
+.brand .dash::after, .shop .dash::after{
+    content: '';
+    border: 2px dashed #ffffff;
+    border-radius:10px ;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0px;
+    left: 0;
+    margin: auto;
+    width: 98%;
+    height: 92%;
+}
+/* 頁尾=================== */
+footer{
+    height: 150px;
+    background-color: rgb(67,105,180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-picture{
+    display: flex;
+    /* background-color: #089f90; */
+    width: 250px;
+    justify-content: space-between;
+} 
+
+.footer-picture .logo{
+    vertical-align: top;
+    text-align: center;
+}
+.footer-picture .logo img{
+    width: 80%;
+    vertical-align: top;
+}
+/* 標題與社群icon---------------- */
+.community {
+    margin: auto;
+}
+
+.community h5 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.community-icon {
+    text-align: center;
+} 
+.community-icon img{
+    vertical-align: top;
+    padding:5px;
+} 
+/* 次要選單----------------- */
+.footer-text {
+    display: flex;
+}
+
+.footer-text ul {
+    padding: 0 5px;
+}
+.footer-text ul li{
+    padding: 3px 30px;
+}
+.footer-text ul li h5{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600; 
+}
+.footer-text ul li a{
+    font-size: 13px; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

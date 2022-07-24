@@ -1,0 +1,135 @@
+/* 網頁內容--------------- */
+
+body{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fff5fe, #E1F6FF, #FFF2FD);   
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(67,105,180);
+    box-shadow: 0 0 15px 2px rgb(39, 50, 105);
+    position: fixed;
+    z-index: 5;
+}
+/* 導覽列------------- */
+.menu {
+    display: flex;
+    justify-content: center;    
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 15px 35px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgb(66, 66, 66);  
+}
+
+/* logo------------- */
+.menu h1 a {
+    text-indent: -100000em;
+    background:url(/image/logo1.svg) no-repeat center / cover;
+    width: 75px;
+    height: 75px;
+    display: block;
+}
+
+/* 購物車與會員小icon----- */
+.sign-in-icon{
+    margin: 15px 15px 15px 102px;
+}
+
+.material-symbols-rounded, .material-symbols-rounded{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    color: gray;
+}
+
+
+
+/* 頁尾=================== */
+footer{
+    height: 150px;
+    background-color: rgb(67,105,180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-picture{
+    display: flex;
+    /* background-color: #089f90; */
+    width: 250px;
+    justify-content: space-between;
+} 
+
+.footer-picture .logo{
+    vertical-align: top;
+    text-align: center;
+}
+.footer-picture .logo img{
+    width: 80%;
+    vertical-align: top;
+}
+/* 標題與社群icon---------------- */
+.community {
+    margin: auto;
+}
+
+.community h5 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.community-icon {
+    text-align: center;
+} 
+.community-icon img{
+    vertical-align: top;
+    padding:5px;
+} 
+/* 次要選單----------------- */
+.footer-text {
+    display: flex;
+}
+
+.footer-text ul {
+    padding: 0 5px;
+}
+.footer-text ul li{
+    padding: 3px 30px;
+}
+.footer-text ul li h5{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600; 
+}
+.footer-text ul li a{
+    font-size: 13px; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
