@@ -36,7 +36,7 @@ header {
 /* logo------------- */
 .menu h1 a {
     text-indent: -100000em;
-    background:url(/image/logo1.svg) no-repeat center / cover;
+    background:url(../image/logo1.svg) no-repeat center / cover;
     width: 75px;
     height: 75px;
     display: block;
@@ -70,7 +70,6 @@ footer{
 }
 .footer-picture{
     display: flex;
-    /* background-color: #089f90; */
     width: 250px;
     justify-content: space-between;
 } 
