@@ -12,7 +12,7 @@ section {
 .custom-paper-tape{
     width: 310px;
     height: 60px;
-    background-image: url(/image/bg2.svg) ;
+    background-image: url(./image/bg2.svg) ;
     background-repeat: no-repeat;
     margin:auto;
     margin-bottom: 100px;
@@ -63,7 +63,7 @@ section {
     color: #404040;
     letter-spacing: 2px;
     display: inline-block;
-    background-image: url(/image/bg7.svg);
+    background-image: url(./image/bg7.svg);
     background-position: no repeat;
 }
 .selection-txt p{
