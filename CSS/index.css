@@ -48,7 +48,7 @@ header {
 /* logo------------- */
 .menu h1 a {
     text-indent: -100000em;
-    background:url(/image/logo1.svg) no-repeat center / cover;
+    background:url(./image/logo1.svg) no-repeat center / cover;
     width: 75px;
     height: 75px;
     display: block;
@@ -107,7 +107,7 @@ header {
 .new-paper-tape {
     width: 250px;
     height: 50px;
-    background-image: url(/image/bg1.svg) ;
+    background-image: url(./image/bg1.svg) ;
     background-repeat: no-repeat;
     position: absolute;
     top: -30px;
@@ -236,7 +236,7 @@ header {
 .product-title {
     width: 310px;
     height: 50px;
-    background-image: url(bg4.svg) ;
+    background-image: url(./image/bg4.svg) ;
     background-repeat: no-repeat;
     position: absolute;
     top: 50px;
@@ -357,7 +357,7 @@ header {
 
 .custom-made-bag {
     max-width: 1200px;
-    background-image:url(/image/bag14.jpg);
+    background-image:url(./image/bag14.jpg);
     border-radius: 91px 0 91px 0;
     margin:auto;
     padding-top: 30px;
@@ -368,7 +368,7 @@ header {
 .custom-paper-tape {
     width: 250px;
     height: 50px;
-    background-image: url(/image/bg2.svg) ;
+    background-image: url(./image/bg2.svg) ;
     background-repeat: no-repeat;
     margin:auto;
 }
@@ -392,7 +392,7 @@ header {
     color: #404040;
     letter-spacing: 2px;
     display: inline-block;
-    background-image: url(/image/bg7.svg);
+    background-image: url(./image/bg7.svg);
     background-position: no repeat;
 }
 
@@ -431,7 +431,7 @@ header {
 /* 波浪背景============ */
 .background {
     height: 162px;
-    background-image: url(/image/bg3.svg);
+    background-image: url(./image/bg3.svg);
 }
 /* ======品牌介紹&店鋪位置======== */
 
